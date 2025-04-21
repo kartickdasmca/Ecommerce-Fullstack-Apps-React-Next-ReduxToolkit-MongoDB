@@ -1,5 +1,6 @@
+@use "base" as *;
 .col{
-  color:green
+  color:$red-color
 }
 
 .coly{
