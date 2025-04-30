@@ -1,4 +1,4 @@
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
+
 import db from '../../lib/db'
 import logger from "../../utils/logger";
 export default function handler(req, res) {
