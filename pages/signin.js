@@ -7,7 +7,7 @@ import Link from 'next/link'
 const signin = () => {
   return (
     <>
-    <Header />
+    {/* <Header /> */}
       <div className={styles.login}>
          <div className={styles.login__container}>
              <div className={styles.login__header}>

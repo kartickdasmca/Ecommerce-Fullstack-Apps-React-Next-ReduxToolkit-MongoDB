@@ -6,6 +6,7 @@ import Link from "next/link";
 import { useState } from "react";
 import UserMenu from "./UserMenu";
 import {useSession} from 'next-auth/react'
+import Image from 'next/image';
 export default function Top({ country }) {
   const [visible, setVisible] = useState(false);
   const {data: session} = useSession()
@@ -16,7 +17,8 @@ export default function Top({ country }) {
         <div></div>
         <ul className={styles.top__list}>
           <li className={styles.li}>
-            <img src={country?.flag} alt="" />
+            {/* <img src={country?.flag} alt="" /> */}
+            <Image src={country?.flag} className={styles.img}  alt="flag" width={28} height={28} />
             <span>{country?.name}</span>
           </li>
           <li className={styles.li}>

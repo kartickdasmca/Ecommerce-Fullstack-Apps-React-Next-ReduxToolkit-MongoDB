@@ -2,13 +2,15 @@ import React from 'react'
 import styles from './styles.module.scss'
 import Link from "next/link";
 import {signOut,signIn} from 'next-auth/react'
+import Image from 'next/image';
 const UserMenu = ({session}) => {
   return (
     <div className={styles.menu}>
     <h4>Welcome to MyShop !</h4>
     {session ? (
       <div className={styles.flex}>
-        <img  alt="" src={session?.user?.image} className={styles.menu__img} />
+        {/* <img  alt="" src={session?.user?.image} className={styles.menu__img} /> */}
+        <Image src={session?.user?.image}  className={styles.menu__img}  alt="flag" width={100} height={100} />
         <div className={styles.col}>
           <span>Welcome Back,</span>
           <h3>{session?.user?.name}</h3>
