@@ -16,12 +16,13 @@ export default function Home({error,country}) {
 
 export async function getServerSideProps(){
   try{
-    const response = await axios.get(`https://api.ipregistry.co/?key=${process.env.REGISTRY_API_KEY}`)
-    const data = await response?.data?.location?.country;
-   console.log(data)
+    //const response = await axios.get(`https://api.ipregistry.co/?key=${process.env.REGISTRY_API_KEY}`)
+   // const data = await response?.data?.location?.country;
+   //console.log(data)
     return {
       props :{
-         country : {name : data?.name || null, flag : data?.flag?.emojitwo || null}
+         //country : {name : data?.name || null, flag : data?.flag?.emojitwo || null}
+         country : {name : 'India' || null, flag : 'https://cdn.ipregistry.co/flags/emojitwo/in.svg' || null}
       }
     }
   }catch(err){
