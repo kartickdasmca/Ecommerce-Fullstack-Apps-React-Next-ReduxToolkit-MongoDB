@@ -18,7 +18,7 @@ const signin = () => {
              </div>
          </div>
       </div>
-    <Footer country='kolkata'/>
+    {/* <Footer country='kolkata'/> */}
     </>
     
   )

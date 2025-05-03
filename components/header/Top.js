@@ -45,7 +45,8 @@ export default function Top({ country }) {
             {session ? (
               <li className={styles.li}>
                 <div className={styles.flex}>
-                  <img alt="" src={session?.user?.image}/>
+                  {/* <img alt="" src={session?.user?.image}/> */}
+                  <Image src={session?.user?.image}   alt="flag" width={28} height={28} />
                   <span>{session?.user?.name || "TEST"}</span>
                   <RiArrowDropDownFill />
                 </div>
