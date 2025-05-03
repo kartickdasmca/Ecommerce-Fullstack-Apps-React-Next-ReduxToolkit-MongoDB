@@ -1,8 +1,8 @@
 import NextAuth from "next-auth";
-import FacebookProvider from "next-auth/providers/facebook";
+// import FacebookProvider from "next-auth/providers/facebook";
 import GoogleProvider from "next-auth/providers/google";
 import GitHubProvider from "next-auth/providers/github";
-import Auth0Provider from "next-auth/providers/auth0";
+// import Auth0Provider from "next-auth/providers/auth0";
 import CredentialsProvider from "next-auth/providers/credentials";
 import {MongoDBAdapter} from '@auth/mongodb-adapter'
 import clientPromise from "./lib/mongodb";
@@ -24,15 +24,15 @@ export const authOptions = {
         clientId: process.env.GOOGLE_ID,
         clientSecret: process.env.GOOGLE_SECRET,
       }),
-      Auth0Provider({
-        clientId: process.env.AUTH0_CLIENT_ID,
-        clientSecret: process.env.AUTH0_CLIENT_SECRET,
-        issuer: process.env.AUTH0_ISSUER,
-      }),
+      // Auth0Provider({
+      //   clientId: process.env.AUTH0_CLIENT_ID,
+      //   clientSecret: process.env.AUTH0_CLIENT_SECRET,
+      //   issuer: process.env.AUTH0_ISSUER,
+      // }),
     // ...add more providers here
   ],
   pages : {
-    signIn : '/signin'
+    //signIn : '/signin'
   },
   session:{
     strategy : "jwt"
