@@ -7,18 +7,18 @@ import Link from 'next/link'
 const signin = () => {
   return (
     <>
-    {/* <Header /> */}
+    <Header />
       <div className={styles.login}>
          <div className={styles.login__container}>
              <div className={styles.login__header}>
                 <div className={styles.back__svg}>
                     <BiLeftArrowAlt/>
                 </div>
-                <span>W'd be happy to join us ! <Link href='/'>Go Store</Link></span>
+                <span>W&apos;d be happy to join us !  <Link href='/'>Go Store</Link></span>
              </div>
          </div>
       </div>
-    {/* <Footer country='kolkata'/> */}
+    <Footer country='kolkata'/>
     </>
     
   )
