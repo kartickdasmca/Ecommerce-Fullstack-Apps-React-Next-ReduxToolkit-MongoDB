@@ -32,7 +32,7 @@ export const authOptions = {
     // ...add more providers here
   ],
   pages : {
-    //signIn : '/signin'
+    signIn : '/signin'
   },
   session:{
     strategy : "jwt"
