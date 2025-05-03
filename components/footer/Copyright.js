@@ -8,8 +8,8 @@ const Copyright = () => {
       <section>©2025 MyShop All Rights Resereved.</section>
       <section>
         <ul>
-          {copyright.map((link) => (
-            <li>
+          {copyright.map((link,i) => (
+            <li key={i}>
               <Link href={link.link}>{link.name}</Link>
             </li>
           ))}
