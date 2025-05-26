@@ -12,6 +12,7 @@
     "@auth/mongodb-adapter": "^3.9.0",
     "@reduxjs/toolkit": "^2.7.0",
     "axios": "^1.9.0",
+    "formik": "^2.4.6",
     "mongodb": "^6.15.0",
     "mongoose": "^8.13.2",
     "next": "15.3.1",
@@ -26,7 +27,8 @@
     "redux-thunk": "^3.1.0",
     "sass": "^1.86.3",
     "update": "^0.7.4",
-    "winston": "^3.17.0"
+    "winston": "^3.17.0",
+    "yup": "^1.6.1"
   },
   "devDependencies": {
     "eslint": "9.25.0",
