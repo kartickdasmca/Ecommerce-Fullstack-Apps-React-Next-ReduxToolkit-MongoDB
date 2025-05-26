@@ -18,7 +18,7 @@ const initialvalues = {
   error: "",
   login_error: "",
 };
-const signin = () => {
+const Signin = () => {
   const [loading, setLoading] = useState(false);
   const [user,setUser] = useState(initialvalues)
   const {
@@ -90,4 +90,4 @@ const signin = () => {
   )
 }
 
-export default signin
+export default Signin
